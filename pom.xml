@@ -23,6 +23,12 @@
         <spring.ver>5.0.4.RELEASE</spring.ver>
         <aspectj.version>1.7.4</aspectj.version>
         <hibernate.version>5.2.12.Final</hibernate.version>
+
+        <sonar.sources>src/main</sonar.sources>
+        <sonar.tests>src/test</sonar.tests>
+        <!-- Sonar-JaCoCo properties -->
+        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
     </properties>
 
   <dependencies>
@@ -119,6 +125,7 @@
                   </execution>
               </executions>
           </plugin>
+
           <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-site-plugin</artifactId>
