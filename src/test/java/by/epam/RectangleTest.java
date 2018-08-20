@@ -30,27 +30,27 @@ public class RectangleTest
         assertTrue(rect2.intersects(rect1));
     }
 
-    @Test
-    public void testOutside1() {
-        Rectangle rect1 = new Rectangle(0, 0, 5, 5);
-        Rectangle rect2 = new Rectangle(5, 5, 4, 4);
-        assertFalse(rect1.intersects(rect2));
-        assertFalse(rect2.intersects(rect1));
-    }
-
-    @Test
-    public void testOutside2() {
-        Rectangle rect1 = new Rectangle(0, 0, 5, 5);
-        Rectangle rect2 = new Rectangle(3, -2, 3, 2);
-        assertFalse(rect1.intersects(rect2));
-        assertFalse(rect2.intersects(rect1));
-    }
-
-    @Test
-    public void testInside1() {
-        Rectangle rect1 = new Rectangle(0, 0, 5, 5);
-        Rectangle rect2 = new Rectangle(0, 2, 2, 2);
-        assertTrue(rect1.intersects(rect2));
-        assertTrue(rect2.intersects(rect1));
-    }
+//    @Test
+//    public void testOutside1() {
+//        Rectangle rect1 = new Rectangle(0, 0, 5, 5);
+//        Rectangle rect2 = new Rectangle(5, 5, 4, 4);
+//        assertFalse(rect1.intersects(rect2));
+//        assertFalse(rect2.intersects(rect1));
+//    }
+//
+//    @Test
+//    public void testOutside2() {
+//        Rectangle rect1 = new Rectangle(0, 0, 5, 5);
+//        Rectangle rect2 = new Rectangle(3, -2, 3, 2);
+//        assertFalse(rect1.intersects(rect2));
+//        assertFalse(rect2.intersects(rect1));
+//    }
+//
+//    @Test
+//    public void testInside1() {
+//        Rectangle rect1 = new Rectangle(0, 0, 5, 5);
+//        Rectangle rect2 = new Rectangle(0, 2, 2, 2);
+//        assertTrue(rect1.intersects(rect2));
+//        assertTrue(rect2.intersects(rect1));
+//    }
 }
